@@ -2,10 +2,9 @@ import 'package:chitchat/presentaion/Screens/home_screen.dart';
 import 'package:chitchat/presentaion/utility/image_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:get/get.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+  const SplashScreen({Key? key}) : super(key: key);
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -19,8 +18,12 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void goTonextScreen() {
-    Future.delayed(const Duration(seconds: 03), () {
-      Get.put(const HomeScreen());
+    Future.delayed(const Duration(seconds: 3)).then((_) {
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => const HomeScreen()),
+        (route) => false,
+      );
     });
   }
 
