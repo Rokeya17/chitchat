@@ -15,12 +15,15 @@ dependencies:
   get: ^4.6.6
   floating_action_bubble: ^1.1.4
   animated_widgets_flutter: ^1.1.1+2
+  firebase_core: ^2.2.0
+
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.3
 
 flutter:
   uses-material-design: true
