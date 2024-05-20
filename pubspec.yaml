@@ -15,7 +15,7 @@ dependencies:
   get: ^4.6.6
   floating_action_bubble: ^1.1.4
   animated_widgets_flutter: ^1.1.1+2
-  firebase_core: ^2.2.0
+  firebase_core: ^2.31.0
 
 
 

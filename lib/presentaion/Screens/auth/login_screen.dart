@@ -1,4 +1,4 @@
-import 'package:chitchat/presentaion/Screens/home_screen.dart';
+import 'package:chitchat/presentaion/Screens/chat_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -24,7 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final mq = MediaQuery.of(context).size; // Initialize mq here
+    final mq = MediaQuery.of(context).size;
 
     return Scaffold(
       body: Stack(children: [
@@ -48,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
             onPressed: () {
               Navigator.pushAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (_) => const HomeScreen()),
+                  MaterialPageRoute(builder: (_) => const ChatScreen()),
                   (route) => false);
             },
             icon: SvgPicture.asset(
